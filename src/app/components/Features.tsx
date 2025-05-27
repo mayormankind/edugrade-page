@@ -17,7 +17,7 @@ export default function Features() {
   return (
     <section id="features" className="py-20 px-8 md:px-4">
     <div className="container mx-auto max-w-6xl">
-      <div className="text-center mb-16">
+      <div className="text-center mb-16 fade-in-up">
         <h2 className="text-4xl font-bold text-gray-900 mb-4">Everything You Need in One Platform</h2>
         <p className="text-xl text-gray-600 max-w-2xl mx-auto">
           From student management to parent communication, EduGrade streamlines every aspect of academic
@@ -26,10 +26,10 @@ export default function Features() {
       </div>
 
       <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-        <Card className="border-blue-100 hover:shadow-lg transition-shadow">
+        <Card className="border-blue-100 hover:shadow-lg transition-all duration-500 hover:scale-105 hover:-translate-y-2 feature-card group">
           <CardHeader className="text-center">
-            <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mx-auto mb-4">
-              <Users className="w-6 h-6 text-blue-600" />
+            <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mx-auto mb-4 transition-all duration-300 group-hover:bg-blue-600 group-hover:scale-110">
+              <Users className="w-6 h-6 text-blue-600 transition-colors duration-300 group-hover:text-white" />
             </div>
             <CardTitle className="text-lg">Admin Dashboard</CardTitle>
           </CardHeader>
@@ -40,10 +40,10 @@ export default function Features() {
           </CardContent>
         </Card>
 
-        <Card className="border-blue-100 hover:shadow-lg transition-shadow">
+        <Card className="border-blue-100 hover:shadow-lg transition-all duration-500 hover:scale-105 hover:-translate-y-2 feature-card group">
           <CardHeader className="text-center">
-            <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mx-auto mb-4">
-              <BarChart3 className="w-6 h-6 text-blue-600" />
+            <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mx-auto mb-4 transition-all duration-300 group-hover:bg-blue-600 group-hover:scale-110">
+              <BarChart3 className="w-6 h-6 text-blue-600 transition-colors duration-300 group-hover:text-white" />
             </div>
             <CardTitle className="text-lg">Automated Results</CardTitle>
           </CardHeader>
@@ -54,10 +54,10 @@ export default function Features() {
           </CardContent>
         </Card>
 
-        <Card className="border-blue-100 hover:shadow-lg transition-shadow">
+        <Card className="border-blue-100 hover:shadow-lg transition-all duration-500 hover:scale-105 hover:-translate-y-2 feature-card group">
           <CardHeader className="text-center">
-            <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mx-auto mb-4">
-              <Shield className="w-6 h-6 text-blue-600" />
+            <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mx-auto mb-4 transition-all duration-300 group-hover:bg-blue-600 group-hover:scale-110">
+              <Shield className="w-6 h-6 text-blue-600 transition-colors duration-300 group-hover:text-white" />
             </div>
             <CardTitle className="text-lg">Parent Portal</CardTitle>
           </CardHeader>
@@ -68,10 +68,10 @@ export default function Features() {
           </CardContent>
         </Card>
 
-        <Card className="border-blue-100 hover:shadow-lg transition-shadow">
+        <Card className="border-blue-100 hover:shadow-lg transition-all duration-500 hover:scale-105 hover:-translate-y-2 feature-card group">
           <CardHeader className="text-center">
-            <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mx-auto mb-4">
-              <Download className="w-6 h-6 text-blue-600" />
+            <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mx-auto mb-4 transition-all duration-300 group-hover:bg-blue-600 group-hover:scale-110">
+              <Download className="w-6 h-6 text-blue-600 transition-colors duration-300 group-hover:text-white" />
             </div>
             <CardTitle className="text-lg">Printable Reports</CardTitle>
           </CardHeader>

@@ -1,6 +1,6 @@
 "use client"
 
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import HeroSection from "./components/HeroSection";
@@ -88,7 +88,32 @@ const Home = () => {
     },
   ];
   
-  
+  const observerRef = useRef<IntersectionObserver | null>(null)
+
+  useEffect(() => {
+    // Create intersection observer for scroll animations
+    observerRef.current = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("animate-in")
+          }
+        })
+      },
+      {
+        threshold: 0.1,
+        rootMargin: "0px 0px -50px 0px",
+      },
+    )
+
+    // Observe all elements with fade-in-up class
+    const elements = document.querySelectorAll(".fade-in-up, .fade-in-left, .fade-in-right, .fade-in-scale")
+    elements.forEach((el) => observerRef.current?.observe(el))
+
+    return () => {
+      observerRef.current?.disconnect()
+    }
+  }, [])
 
   return (
     <div className="bg-gradient-to-b from-blue-50 to-white min-h-screen relative w-full overflow-hidden">
