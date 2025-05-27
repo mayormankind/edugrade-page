@@ -17,31 +17,31 @@ const Home = () => {
       quote: "EduGrade has transformed how we manage student performance. Parents love the instant access to results, and our staff saves hours each week on administrative tasks.",
       author: "Dr. Sarah Johnson",
       position: "Principal, Westfield Academy",
-      image: "/placeholder.svg",
+      image: "/1.jpg",
     },
     {
       quote: "As a parent of three children, I used to dread result day. Now I can track my children's progress throughout the term and provide support exactly where it's needed.",
       author: "Michael Chen",
       position: "Parent of 3 students",
-      image: "/placeholder.svg",
+      image: "/2.jpg",
     },
     {
       quote: "The analytics feature has helped us identify subject areas where students need additional support. It's been instrumental in raising our overall academic standards.",
       author: "Amanda Torres",
       position: "Academic Director, Springfield School",
-      image: "/placeholder.svg",
+      image: "/3.jpg",
     },
     {
       quote: "As a parent of three children, I used to dread result day. Now I can track my children's progress throughout the term and provide support exactly where it's needed.",
       author: "Michael Chen",
       position: "Parent of 3 students",
-      image: "/placeholder.svg",
+      image: "/1.jpg",
     },
     {
       quote: "The analytics feature has helped us identify subject areas where students need additional support. It's been instrumental in raising our overall academic standards.",
       author: "Amanda Torres",
       position: "Academic Director, Springfield School",
-      image: "/placeholder.svg",
+      image: "/2.jpg",
     },
   ];
 
