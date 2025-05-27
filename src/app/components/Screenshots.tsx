@@ -1,9 +1,4 @@
 import React from 'react'
-import { Button } from "@/components/ui/button"
-import { Badge } from "@/components/ui/badge"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Input } from "@/components/ui/input"
-import { Textarea } from "@/components/ui/textarea"
 import Image from "next/image"
 import Link from "next/link"
 {/* Screenshots Section */}
@@ -25,7 +20,7 @@ export default function Screenshots() {
             generate reports with just a few clicks.
           </p>
           <Image
-            src="/placeholder.svg?height=300&width=500"
+            src="/edugrade.PNG?height=300&width=500"
             alt="Admin Dashboard Interface"
             width={500}
             height={300}
@@ -40,7 +35,7 @@ export default function Screenshots() {
             Print-ready in seconds.
           </p>
           <Image
-            src="/placeholder.svg?height=300&width=500"
+            src="/edugrade.PNG?height=300&width=500"
             alt="Report Card Preview"
             width={500}
             height={300}

@@ -9,6 +9,7 @@ import Pricing from "./components/Pricing";
 import TestimonialSection from "./components/TestimonialSection";
 import Contact from "./components/Contact";
 import Faqs from "./components/Faqs";
+import Screenshots from "./components/Screenshots";
 
 const Home = () => {
 
@@ -119,6 +120,7 @@ const Home = () => {
     <div className="bg-gradient-to-b from-blue-50 to-white min-h-screen relative w-full overflow-hidden">
       <HeroSection/>
       <Features/>
+      <Screenshots/>
       <TestimonialSection testimonials={testimonials}/>
       <Pricing/>
       <Faqs faqs={faqs}/>

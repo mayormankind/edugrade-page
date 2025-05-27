@@ -27,7 +27,7 @@ export default function HeroSection() {
       </div>
       <div className="mt-12 hero-image">
         <Image
-          src="/edugrade.png"
+          src="/edugrade.PNG"
           alt="EduGrade Dashboard Preview"
           width={800}
           height={400}
