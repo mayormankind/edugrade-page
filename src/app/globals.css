@@ -1,0 +1,278 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* color: #bcd3f8; */
+  /* color: #fdc3c3; */
+  /* color: #919aff66; */
+}
+
+html{
+  scroll-behavior: smooth;
+
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.gradient{
+  background: linear-gradient(to right, #3A78C9, #127eeb, #1E90FF, #3A78C9);
+}
+
+h1 {
+  color: #1667B1;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+select {
+  width: 100%;
+  height: 40px;
+  padding: 0 8px;
+}
+
+button {
+  background: #3B82F6;
+  border: none;
+  outline: none;
+  height: 40px;
+  border-radius: 6px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  width: 100%;
+  padding: 8px 24px;
+}
+
+button:hover {
+  background: #1667B1;
+}
+
+.field{
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+}
+
+.field label{
+  font-size: 14px;
+}
+
+select, input, textarea{
+  border: 1px solid rgb(104, 136, 168);
+  padding: 8px;
+  border-radius: 4px;
+}
+
+@keyframes modalFadeIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-modalFadeIn {
+  animation: modalFadeIn 0.3s ease-out forwards;
+}
+
+
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 224 71.4% 4.1%;
+    --card: 0 0% 100%;
+    --card-foreground: 224 71.4% 4.1%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 224 71.4% 4.1%;
+    --primary: 220.9 39.3% 11%;
+    --primary-foreground: 210 20% 98%;
+    --secondary: 220 14.3% 95.9%;
+    --secondary-foreground: 220.9 39.3% 11%;
+    --muted: 220 14.3% 95.9%;
+    --muted-foreground: 220 8.9% 46.1%;
+    --accent: 220 14.3% 95.9%;
+    --accent-foreground: 220.9 39.3% 11%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 20% 98%;
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 224 71.4% 4.1%;
+    --chart-1: 12 76% 61%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+    --radius: 0.5rem;
+  }
+  .dark {
+    --background: 224 71.4% 4.1%;
+    --foreground: 210 20% 98%;
+    --card: 224 71.4% 4.1%;
+    --card-foreground: 210 20% 98%;
+    --popover: 224 71.4% 4.1%;
+    --popover-foreground: 210 20% 98%;
+    --primary: 210 20% 98%;
+    --primary-foreground: 220.9 39.3% 11%;
+    --secondary: 215 27.9% 16.9%;
+    --secondary-foreground: 210 20% 98%;
+    --muted: 215 27.9% 16.9%;
+    --muted-foreground: 217.9 10.6% 64.9%;
+    --accent: 215 27.9% 16.9%;
+    --accent-foreground: 210 20% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 20% 98%;
+    --border: 215 27.9% 16.9%;
+    --input: 215 27.9% 16.9%;
+    --ring: 216 12.2% 83.9%;
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+  }
+}
+
+
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+
+  /* Hero Animations */
+  .hero-title {
+    animation: fadeInUp 1s ease-out;
+  }
+  
+  .hero-subtitle {
+    animation: fadeInUp 1s ease-out 0.2s both;
+  }
+  
+  .hero-buttons {
+    animation: fadeInUp 1s ease-out 0.4s both;
+  }
+  
+  .hero-image {
+    animation: fadeInUp 1s ease-out 0.6s both;
+  }
+
+  /* Gradient text effect */
+  .gradient-text {
+    background: linear-gradient(135deg, #3B82F6, #1D4ED8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* Scroll-triggered animations */
+  .fade-in-up {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s ease-out;
+  }
+
+  .fade-in-left {
+    opacity: 0;
+    transform: translateX(-30px);
+    transition: all 0.6s ease-out;
+  }
+
+  .fade-in-right {
+    opacity: 0;
+    transform: translateX(30px);
+    transition: all 0.6s ease-out;
+  }
+
+  .fade-in-scale {
+    opacity: 0;
+    transform: scale(0.9);
+    transition: all 0.6s ease-out;
+  }
+
+  .animate-in {
+    opacity: 1;
+    transform: translateY(0) translateX(0) scale(1);
+  }
+
+  /* Staggered animations for cards */
+  .feature-card:nth-child(1) { animation-delay: 0.1s; }
+  .feature-card:nth-child(2) { animation-delay: 0.2s; }
+  .feature-card:nth-child(3) { animation-delay: 0.3s; }
+  .feature-card:nth-child(4) { animation-delay: 0.4s; }
+
+  .testimonial-card:nth-child(1) { animation-delay: 0.1s; }
+  .testimonial-card:nth-child(2) { animation-delay: 0.2s; }
+  .testimonial-card:nth-child(3) { animation-delay: 0.3s; }
+
+  .pricing-card:nth-child(1) { animation-delay: 0.1s; }
+  .pricing-card-featured:nth-child(2) { animation-delay: 0.2s; }
+  .pricing-card:nth-child(3) { animation-delay: 0.3s; }
+
+  /* Problem/Solution item animations */
+  .problem-item:nth-child(1) { animation-delay: 0.1s; }
+  .problem-item:nth-child(2) { animation-delay: 0.2s; }
+  .problem-item:nth-child(3) { animation-delay: 0.3s; }
+  .problem-item:nth-child(4) { animation-delay: 0.4s; }
+
+  .solution-item:nth-child(1) { animation-delay: 0.1s; }
+  .solution-item:nth-child(2) { animation-delay: 0.2s; }
+  .solution-item:nth-child(3) { animation-delay: 0.3s; }
+  .solution-item:nth-child(4) { animation-delay: 0.4s; }
+
+  .contact-item:nth-child(1) { animation-delay: 0.1s; }
+  .contact-item:nth-child(2) { animation-delay: 0.2s; }
+  .contact-item:nth-child(3) { animation-delay: 0.3s; }
+
+  .benefit-item:nth-child(1) { animation-delay: 0.1s; }
+  .benefit-item:nth-child(2) { animation-delay: 0.2s; }
+  .benefit-item:nth-child(3) { animation-delay: 0.3s; }
+
+  /* Keyframe animations */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes bounce-slow {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-10px);
+    }
+    60% {
+      transform: translateY(-5px);
+    }
+  }
+
+  .animate-bounce-slow {
+    animation: bounce-slow 3s infinite;
+  }
+
+  /* Smooth scrolling */
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Custom shadow */
+  .hover\:shadow-3xl:hover {
+    box-shadow: 0 35px 60px -12px rgba(0, 0, 0, 0.25);
+  }
