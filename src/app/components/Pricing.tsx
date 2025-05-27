@@ -9,13 +9,13 @@ export default function Pricing() {
   return (
     <section id="pricing" className="py-20 px-8 md:px-4 bg-gray-50">
     <div className="container mx-auto max-w-6xl">
-      <div className="text-center mb-16">
+      <div className="text-center mb-16 fade-in-up">
         <h2 className="text-4xl font-bold text-gray-900 mb-4">Simple, Transparent Pricing</h2>
         <p className="text-xl text-gray-600">Choose the plan that fits your school's needs</p>
       </div>
 
       <div className="grid md:grid-cols-3 gap-8">
-        <Card className="border-blue-100">
+        <Card className="border-blue-100 transition-all duration-500 hover:scale-105 hover:-translate-y-2 pricing-card">
           <CardHeader className="text-center">
             <CardTitle className="text-2xl">Starter</CardTitle>
             <CardDescription>Perfect for small schools</CardDescription>
@@ -43,11 +43,11 @@ export default function Pricing() {
                 <span>Email support</span>
               </li>
             </ul>
-            <Button className="w-full mt-6 bg-blue-600 hover:bg-blue-700">Start Free Trial</Button>
+            <Button className="w-full mt-6 bg-blue-600 hover:bg-blue-700 transition-all duration-300 hover:scale-105">Start Free Trial</Button>
           </CardContent>
         </Card>
 
-        <Card className="border-blue-500 relative">
+        <Card className="border-blue-500 relative transition-all duration-500 hover:scale-105 hover:-translate-y-2 pricing-card-featured">
           <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
             <Badge className="bg-blue-600 text-white">Most Popular</Badge>
           </div>
@@ -82,11 +82,11 @@ export default function Pricing() {
                 <span>Bulk operations</span>
               </li>
             </ul>
-            <Button className="w-full mt-6 bg-blue-600 hover:bg-blue-700">Start Free Trial</Button>
+            <Button className="w-full mt-6 bg-blue-600 hover:bg-blue-700 transition-all duration-300 hover:scale-105">Start Free Trial</Button>
           </CardContent>
         </Card>
 
-        <Card className="border-blue-100">
+        <Card className="border-blue-100 transition-all duration-500 hover:scale-105 hover:-translate-y-2 pricing-card">
           <CardHeader className="text-center">
             <CardTitle className="text-2xl">Enterprise</CardTitle>
             <CardDescription>For large institutions</CardDescription>
