@@ -24,7 +24,7 @@ const TestimonialSection = ({ testimonials }: TestimonialSectionProps) => {
   return (
     <section id="testimonials" className="py-20 px-8 md:px-4 bg-blue-50 w-full">
       <div className="container mx-auto max-w-6xl">
-        <div className="text-center max-w-3xl mx-auto mb-16">
+        <div className="text-center max-w-3xl mx-auto mb-16 fade-in-up">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
             Trusted by Educators and Parents
           </h2>
