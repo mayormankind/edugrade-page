@@ -20,7 +20,7 @@ export default function Pricing() {
             <CardTitle className="text-2xl">Starter</CardTitle>
             <CardDescription>Perfect for small schools</CardDescription>
             <div className="mt-4">
-              <span className="text-4xl font-bold text-gray-900">$29</span>
+              <span className="text-4xl font-bold text-gray-900">10k</span>
               <span className="text-gray-600">/month</span>
             </div>
           </CardHeader>
@@ -55,8 +55,8 @@ export default function Pricing() {
             <CardTitle className="text-2xl">Pro</CardTitle>
             <CardDescription>Ideal for growing schools</CardDescription>
             <div className="mt-4">
-              <span className="text-4xl font-bold text-gray-900">$79</span>
-              <span className="text-gray-600">/month</span>
+              <span className="text-4xl font-bold text-gray-900">150k</span>
+              <span className="text-gray-600"></span>
             </div>
           </CardHeader>
           <CardContent>
@@ -91,7 +91,7 @@ export default function Pricing() {
             <CardTitle className="text-2xl">Enterprise</CardTitle>
             <CardDescription>For large institutions</CardDescription>
             <div className="mt-4">
-              <span className="text-4xl font-bold text-gray-900">Custom</span>
+              <span className="text-4xl font-bold text-gray-900">Custom Tailored</span>
             </div>
           </CardHeader>
           <CardContent>
@@ -117,7 +117,7 @@ export default function Pricing() {
                 <span>Custom integrations</span>
               </li>
             </ul>
-            <Button variant="outline" className="w-full mt-6 border-blue-200 hover:bg-blue-50">
+            <Button variant="outline" className="w-full mt-6 border-blue-200 hover:bg-blue-50 bg-black">
               Contact Sales
             </Button>
           </CardContent>

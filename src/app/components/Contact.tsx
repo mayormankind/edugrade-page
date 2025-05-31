@@ -44,6 +44,7 @@ export default function Contact() {
         description: "Ensure to fill in all details!",
         variant: "destructive",
       });
+      setIsSubmitting(false)
       return;   
     }
     
