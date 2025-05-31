@@ -4,6 +4,7 @@ import "./globals.css";
 import Provider from "@/components/ui/provider";
 import Footer from "./components/footer";
 import Header from "./components/header";
+import { Toaster } from "@/components/ui/toaster";
 
 
 const geistSans = Geist({
@@ -35,6 +36,7 @@ export default function RootLayout({
           {children}
           <Footer/>
         </Provider>
+        <Toaster/>
       </body>
     </html>
   );

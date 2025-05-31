@@ -17,7 +17,7 @@ interface FaqSectionProps {
 
 const Faqs = ({ faqs }: FaqSectionProps) => {
   return (
-    <section id="faq" className="py-20 px-8 md:px-4 bg-gray-50 w-full">
+    <section id="faqs" className="py-20 px-8 md:px-4 bg-gray-50 w-full">
       <div className="container mx-auto">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">

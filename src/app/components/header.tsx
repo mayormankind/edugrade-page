@@ -16,17 +16,22 @@ export default function Header() {
       <div className="absolute w-full h-full top-0 bottom-0 left-0"></div>
       <div className='container relative mx-auto flex items-center justify-between py-4 px-6 w-full'>
         <div className="flex items-center">
-          <img src="/logo.png" alt="" className="h-10" />
+          <Link href={'/'}>
+            <img src="/logo.png" alt="" className="h-10" />
+          </Link>
         </div>
         <nav className="hidden md:flex items-center space-x-8">
           <Link href="#features" className="text-gray-600 hover:text-blue-600 transition-colors">
             Features
           </Link>
+          <Link href="#testimonials" className="text-gray-600 hover:text-blue-600 transition-colors">
+            Testimonials
+          </Link>
           <Link href="#pricing" className="text-gray-600 hover:text-blue-600 transition-colors">
             Pricing
           </Link>
-          <Link href="#testimonials" className="text-gray-600 hover:text-blue-600 transition-colors">
-            Testimonials
+          <Link href="#faqs" className="text-gray-600 hover:text-blue-600 transition-colors">
+            FAQs
           </Link>
           <Link href="#contact" className="text-gray-600 hover:text-blue-600 transition-colors">
             Contact

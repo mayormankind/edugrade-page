@@ -5,7 +5,7 @@ import React, { useState } from 'react'
 export default function Footer() {
   return (
     // <div className='flex w-full text-white bg-gradient-to-r from-blue-500 to-indigo-600 py-12'>
-    <div className='flex w-full text-white bg-gradient-to-r from-gray-900 to-gray-600 py-12'>
+    <div className='flex w-full text-white bg-gray-900 py-12'>
       <div className="container flex mx-auto flex-col py-4 px-4">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
