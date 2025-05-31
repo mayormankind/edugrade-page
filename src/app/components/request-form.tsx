@@ -132,7 +132,7 @@ export default function AccountRequestForm({setFormOpen}: RequestFormProps) {
       </>
         {/* <Backdrop> */}
         {isSubmitted && 
-          <div className='fixed inset-0 w-full h-screen bg-black/50 flex justify-center items-center z-60 transition-opacity duration-300 ease-in-out backdrop-blur-sm'>
+          <div className='fixed inset-0 w-full h-screen bg-black/50 flex justify-center items-center z-50 transition-opacity duration-300 ease-in-out backdrop-blur-sm'>
             <div className="bg-white rounded-md shadow-lg p-12 w-full max-w-lg relative transform transition-all duration-300 ease-out scale-95 opacity-0 animate-modalFadeIn text-center">
               <IconButton className='absolute top-4 right-4 bg-transparent hover:text-red-500 w-fit text-black' onClick={()=>setIsSubmitted(false)}>
                 <Close/>

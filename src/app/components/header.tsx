@@ -12,7 +12,7 @@ export default function Header() {
   const [formOpen, setFormOpen ] = useState(false);
 
   return (
-    <div className='bg-white/80 backdrop-blur-sm sticky top-0 z-50 border-b'>
+    <div className='bg-white/80 backdrop-blur-sm sticky top-0 z-40 border-b'>
       <div className="absolute w-full h-full top-0 bottom-0 left-0"></div>
       <div className='container relative mx-auto flex items-center justify-between py-4 px-6 w-full'>
         <div className="flex items-center">
