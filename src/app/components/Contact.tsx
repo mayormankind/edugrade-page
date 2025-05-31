@@ -8,6 +8,8 @@ import { addDoc, collection } from 'firebase/firestore'
 import { Check, Clock, Eye, Mail, MapPin, Phone, Shield } from 'lucide-react'
 import React, { useState } from 'react'
 import { Backdrop } from './Backdrop'
+import Close from '@mui/icons-material/Close'
+import { IconButton } from '@chakra-ui/react'
 
 {/* Contact Section */}
 export default function Contact() {
@@ -169,7 +171,23 @@ export default function Contact() {
         {error && <p className="text-red-500 text-sm mt-4">{error}</p>}
       </div>
     </div>
-
+    {/* <Backdrop> */}
+    {isSubmitted && 
+      <div className='fixed inset-0 w-full h-screen bg-black/50 flex justify-center items-center z-60 transition-opacity duration-300 ease-in-out backdrop-blur-sm'>
+        <div className="bg-white rounded-md shadow-lg p-12 w-full max-w-lg relative transform transition-all duration-300 ease-out scale-95 opacity-0 animate-modalFadeIn text-center">
+          <IconButton className='absolute top-4 right-4 bg-transparent hover:text-red-500 w-fit text-black' onClick={()=>setIsSubmitted(false)}>
+            <Close/>
+          </IconButton>
+          <div className="inline-flex items-center justify-center bg-black/50 w-16 h-16 rounded-full mb-6">
+            <Check className="h-8 w-8 text-black" />
+          </div>
+          <h3 className="text-2xl font-bold text-black mb-3">You're on the List!</h3>
+          <p className="text-gray-700 max-w-md mx-auto">
+            Thank you for joining our waitlist. We'll keep you updated on our launch and early access opportunities.
+          </p>
+        </div>
+      </div>
+    }
   </section>
   )
 }
