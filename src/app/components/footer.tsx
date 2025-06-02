@@ -19,7 +19,7 @@ export default function Footer() {
               Revolutionizing school management with intelligent automation and beautiful design.
             </p>
           </div>
-          <div className="flex flex-col items-center md:items-start">
+          <div>
             <h2 className="text-lg mb-4 font-semibold">Product</h2>
             <ul className="space-y-2 text-gray-400">
               <li>
@@ -36,7 +36,7 @@ export default function Footer() {
               </li>
             </ul>
           </div>
-          <div className="flex flex-col items-center md:items-start">
+          <div>
             <h2 className="text-lg mb-4 font-semibold">About</h2>
             <ul className="space-y-2 text-gray-400">
               <li>

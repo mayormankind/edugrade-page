@@ -74,7 +74,7 @@ export default function Contact() {
   }
 
   return (
-    <section id="contact" className="py-20 px-8 md:px-4">
+    <section id="contact" className="w-full py-20 px-8 flex  flex-col md:px-4">
     <div className="container mx-auto max-w-4xl">
       <div className="text-center mb-16">
         <h2 className="text-4xl font-bold text-gray-900 mb-4">Ready to Transform Your School?</h2>
