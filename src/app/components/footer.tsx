@@ -1,6 +1,4 @@
-import { BookOpen } from 'lucide-react'
 import Link from 'next/link'
-import React, { useState } from 'react'
 
 export default function Footer() {
   return (
