@@ -9,12 +9,15 @@ export default function Footer() {
       <div className="container flex mx-auto flex-col py-4 px-4">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
-            <div className="flex items-center space-x-2 mb-4">
+            {/* <div className="flex items-center space-x-2 mb-4">
               <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
                 <BookOpen className="w-5 h-5 text-white" />
               </div>
               <span className="text-xl font-bold">EduGrade</span>
-            </div>
+            </div> */}
+            <Link href={'/'}>
+              <img src="/logo.png" alt="" className="h-10" />
+            </Link>
             <p className="text-gray-400">
               Revolutionizing school management with intelligent automation and beautiful design.
             </p>
