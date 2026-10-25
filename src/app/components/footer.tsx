@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 
 export default function Footer() {
   return (
@@ -14,7 +15,13 @@ export default function Footer() {
               <span className="text-xl font-bold">EduGrade</span>
             </div> */}
             <Link href={'/'}>
-              <img src="/logo.png" alt="" className="h-10" />
+              <Image
+                src="/logo.png"
+                alt="EduGrade logo"
+                width={354}
+                height={96}
+                className="h-10 w-auto"
+              />
             </Link>
             <p className="text-gray-400">
               Revolutionizing school management with intelligent automation and beautiful design.

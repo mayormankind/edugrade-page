@@ -1,4 +1,4 @@
-import React from "react";
+import Image from "next/image";
 import {
   Carousel,
   CarouselContent,
@@ -51,10 +51,13 @@ const TestimonialSection = ({ testimonials }: TestimonialSectionProps) => {
                       <p className="text-gray-700 mb-6 flex-grow">{testimonial.quote}</p>
                       <div className="flex items-center mt-auto">
                         <div className="h-12 w-12 rounded-full bg-gray-200 overflow-hidden mr-4">
-                          <img
+                          <Image
                             src={testimonial.image}
-                            alt={testimonial.author}
+                            alt={`${testimonial.author} profile photo`}
+                            width={48}
+                            height={48}
                             className="h-full w-full object-cover"
+                            unoptimized={/^https?:\/\//.test(testimonial.image)}
                           />
                         </div>
                         <div>

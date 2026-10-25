@@ -1,8 +1,8 @@
 "use client"
 
 import Link from 'next/link'
-import React, { useState } from 'react'
-import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai'
+import Image from 'next/image'
+import { useState } from 'react'
 import AccountRequestForm from './request-form';
 import { Button } from "@/components/ui/button"
 
@@ -17,7 +17,13 @@ export default function Header() {
       <div className='container relative mx-auto flex items-center justify-between py-4 px-6 w-full'>
         <div className="flex items-center">
           <Link href={'/'}>
-            <img src="/logo.png" alt="" className="h-10" />
+            <Image
+              src="/logo.png"
+              alt="EduGrade logo"
+              width={354}
+              height={96}
+              className="h-10 w-auto"
+            />
           </Link>
         </div>
         <nav className="hidden md:flex items-center space-x-8">
